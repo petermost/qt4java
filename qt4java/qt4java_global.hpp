@@ -1,0 +1,12 @@
+#ifndef QT4JAVA_GLOBAL_HPP
+#define QT4JAVA_GLOBAL_HPP
+
+#include <QtCore/qglobal.h>
+
+#if defined(QT4JAVA_LIBRARY)
+#  define QT4JAVASHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define QT4JAVASHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // QT4JAVA_GLOBAL_HPP
